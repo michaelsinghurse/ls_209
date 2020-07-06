@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: inline-block;
+  background-color: #464f77;
+  color: white;
+  width: 335px;
+}
+
+nav ul li {
+  padding: 10px 0 0 98px;
+}
+
+nav ul li:nth-child(1) span {
+  
+}
+
+nav ul li + li {
+  padding-left: 138px;
+}
+
+main {
+  display: inline-block;
+}
+
+
