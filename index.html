@@ -3,32 +3,97 @@
 <head>
   <title>Todos</title>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="stylesheets/reset.css" />
   <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><img src="images/all-todos.png"/><span>All Todos</span><span>18</span></li>
-        <li><span>02/16</span><span>8</span></li>
-        <li><span>03/16</span><span>2</span></li>
-        <li><span>04/16</span><span>1</span></li>
-        <li><span>05/16</span><span>1</span></li>
-        <li><span>06/16</span><span>6</span></li>
+    <input type="checkbox" id="nav-toggle" />
+    <nav id="nav-lists">
+      <ul id="nav-all">
+        <li><img src="images/all-todos.png" alt="All Todos" />
+            <span class="due-date">All Todos</span><span class="count">18</span>
+        </li>
+        <li class="active"><span class="due-date">02/16</span><span class="count">8</span></li>
+        <li><span class="due-date">03/16</span><span class="count">2</span></li>
+        <li><span class="due-date">04/16</span><span class="count">1</span></li>
+        <li><span class="due-date">05/16</span><span class="count">1</span></li>
+        <li><span class="due-date">06/16</span><span class="count">6</span></li>
       </ul>
-      <ul>
-        <li><img src="images/done.png"/><span>Completed</span></li>
-        <li><span>02/15</span></li>
-        <li><span>03/15</span></li>
-        <li><span>04/15</span></li>
-        <li><span>05/15</span></li>
-        <li><span>06/14</span></li>
+      <ul id="nav-done">
+        <li><img src="images/done.png" alt="Done Todos"/>
+            <span class="due-date">Completed</span>
+        </li>
+        <li><span class="due-date done">02/15</span></li>
+        <li><span class="due-date done">03/15</span></li>
+        <li><span class="due-date done">04/15</span></li>
+        <li><span class="due-date done">05/15</span></li>
+        <li><span class="due-date done">06/14</span></li>
       </ul>
     </nav>
   </header>
   <main>
-
+    <label for="nav-toggle" id="hamburger-label">
+      <img src="images/hamburger.png" alt="Show nav window" />
+    </label>
+    <article id="active-list">
+      <header>
+        <h1>02/16</h1>
+        <span class="count">8</span>
+      </header>
+      <button type="button" id="add-todo">
+        <img src="images/plus.png" alt="Add Todo"/>
+        Add new to do
+      </button>
+      <ul id="todos">
+        <li class="todo-item">
+          <img src="images/unticked-box.png" alt="Tick box"/> 
+          <h2>Item 1</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item">
+          <img src="images/unticked-box.png" alt="Tick box" /> 
+          <h2>Item 2</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item done">
+          <img src="images/ticked-box.png" alt="Tick box"/> 
+          <h2>Item 3</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item done">
+          <img src="images/ticked-box.png" alt="Tick box"/> 
+          <h2>Item 4</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item done">
+          <img src="images/ticked-box.png" alt="Tick box"/> 
+          <h2>Item 5</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item">
+          <img src="images/unticked-box.png" alt="Tick box" /> 
+          <h2>Item 6</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item">
+          <img src="images/unticked-box.png" alt="Tick box" /> 
+          <h2>Item 7</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item">
+          <img src="images/unticked-box.png" alt="Tick box"/> 
+          <h2>Item 8</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+        <li class="todo-item">
+          <img src="images/unticked-box.png" alt="Tick box" /> 
+          <h2>Item 9</h2>
+          <button type="button"><img src="images/trash.png" alt="Trash"/></button>
+        </li>
+      </ul>
+    </article>
   </main>
 </body>
 </html>
