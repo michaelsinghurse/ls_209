@@ -52,48 +52,48 @@
           <li class="todo-item">
             <img src="images/unticked-box.png" alt="Tick box"/> 
             <div class="todo-title">
-              <label for="modal-toggle" id="modal-label"><h2>Item 1</h2></label>
+              <label for="modal-toggle" id="modal-label"><span>Item 1</span></label>
             </div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item">
             <img src="images/unticked-box.png" alt="Tick box" /> 
-            <div class="todo-title"><h2>Item 2</h2></div>
+            <div class="todo-title"><span>Item 2</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item done">
             <img src="images/ticked-box.png" alt="Tick box"/> 
-            <div class="todo-title"><h2>Item 3</h2></div>
+            <div class="todo-title"><span>Item 3</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item done">
             <img src="images/ticked-box.png" alt="Tick box"/> 
-            <div class="todo-title"><h2>Item 4</h2></div>
+            <div class="todo-title"><span>Item 4</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item done">
             <img src="images/ticked-box.png" alt="Tick box"/> 
-            <div class="todo-title"><h2>Item 5</h2></div>
+            <div class="todo-title"><span>Item 5</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item">
             <img src="images/unticked-box.png" alt="Tick box" /> 
-            <div class="todo-title"><h2>Item 6</h2></div>
+            <div class="todo-title"><span>Item 6</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item">
             <img src="images/unticked-box.png" alt="Tick box" /> 
-            <div class="todo-title"><h2>Item 7</h2></div>
+            <div class="todo-title"><span>Item 7</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item">
             <img src="images/unticked-box.png" alt="Tick box"/> 
-            <div class="todo-title"><h2>Item 8</h2></div>
+            <div class="todo-title"><span>Item 8</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
           <li class="todo-item">
             <img src="images/unticked-box.png" alt="Tick box" /> 
-            <div class="todo-title"><h2>Item 9</h2></div>
+            <div class="todo-title"><span>Item 9</span></div>
             <button type="button"><img src="images/trash.png" alt="Trash"/></button>
           </li>
         </ul>
@@ -107,71 +107,80 @@
                 </li>
                 <li>
                   <label for="due-day">Due Date</label><!--
-                  --><select name="due-day" id="due-day">
-                    <option value="" disable selected>Day</option>
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>04</option>
-                    <option>05</option>
-                    <option>06</option>
-                    <option>07</option>
-                    <option>08</option>
-                    <option>09</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                  </select>
+                  --><div class="select-wrapper">
+                    <select name="due-day" id="due-day">
+                      <option disabled selected>Day</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                      <option>22</option>
+                      <option>23</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>26</option>
+                      <option>27</option>
+                      <option>28</option>
+                      <option>29</option>
+                      <option>30</option>
+                      <option>31</option>
+                    </select>
+                    <img src="images/select.png" alt="Arrow icon" />
+                  </div>
                   <span>/</span>
-                  <select name="due-month" id="due-month">
-                    <option value="" disable selected>Month</option>
-                    <option>January</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                    <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option>
-                    <option>December</option>
-                  </select>
+                  <div class="select-wrapper">
+                    <select name="due-month" id="due-month">
+                      <option disabled selected>Month</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </select>
+                    <img src="images/select.png" alt="Arrow icon" />
+                  </div>
                   <span>/</span>
-                  <select name="due-year" id="due-year">
-                    <option value="" disable selected>Year</option>
-                    <option>2020</option>
-                    <option>2021</option>
-                    <option>2022</option>
-                    <option>2023</option>
-                    <option>2024</option>
-                    <option>2025</option>
-                    <option>2026</option>
-                    <option>2027</option>
-                    <option>2028</option>
-                    <option>2029</option>
-                    <option>2030</option>
-                  </select>
+                  <div class="select-wrapper">
+                    <select name="due-year" id="due-year">
+                      <option disabled selected>Year</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                    </select>
+                    <img src="images/select.png" alt="Arrow icon" />
+                  </div>
                 </li>
                 <li>
                   <label for="description">Description</label><!--
